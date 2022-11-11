@@ -3,21 +3,22 @@
 
 <h3> 👨🏻‍💻 About Me </h3>
 
-- 🔭 &nbsp; I’m currently learning Docker, kubernetes, Jenkins, React
+- 🔭 &nbsp; I'm Web Developer experienced since 2013 with Back / Front technical stacks and in Agile methodology. 
 - 🤔 &nbsp; Exploring new technologies and developing software solutions.
-- 🎓 &nbsp; Studying Computer Science, computer programming and Mathematics.
-- 💼 &nbsp; Android developer and front-end web developer.
-- 🌱 &nbsp; Enthusiast in cyber Security and Artificial Intelligence .
-- ✍️ &nbsp; Watching Anime and trying out latest design trends as hobbies/side hustles.
-- ☕ &nbsp; I belive, a perfect cup of coffee can be the ultimate solution for any stress. 
+- 🎓 &nbsp; IT engineer : Studying Computer Science, computer programming and Mathematics.
+- 💼 &nbsp; Full stask developper since 2013, i held the position of scrum master developer at Greenflex for 2 years
+- 🌱 &nbsp; Enthusiast in cyber Security and web referencing (SEO)
+- ✍️ &nbsp; Watch animated movies and try out the latest design trends and photography as a hobby/side activity.
+- ☕ &nbsp; I belive, a perfect cup of coffee and doing sport can be the ultimate solution for any stress. 
+- 😁 &nbsp; My boss always says that the problem is between the chair and the keyboard
 
 <h3>🛠 Tech Stack</h3>
 
-- 💻 &nbsp; Python | Dart | Java | C++  
-- 🌐 &nbsp; Android | flutter | HTML | CSS | JavaScript | Bootstrap 
-- 🛢 &nbsp; MySQL | NPM | Xampp | Docker | kubernetes
-- 🔧 &nbsp; Android Studio | PyCharm | Visual Studio code | Eclipse | Git
-- 🖥 &nbsp; Adobe Xd | Illustrator | Photoshop | OpenShot
+- 💻 &nbsp; PHP | Symfony | Twig | API-Platform | API (REST | GraphQL | SOAP) 
+- 🌐 &nbsp; HTML | CSS | JavaScript | Bootstrap | React | VueJs
+- 🛢 &nbsp; MySQL | MariaDB | PostgreSQL | AS400 | Xampp | Docker | Xampp
+- 🔧 &nbsp; Phpstorm | Visual Studio code | Git (Github | GitLab | Bitbucket) | kubernetes
+- 🖥 &nbsp; Microsoft Office | Illustrator | Photoshop 
 
 <br>
 
