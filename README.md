@@ -16,7 +16,7 @@
 
 - 💻 &nbsp; PHP | Symfony | Twig | API-Platform | API (REST | GraphQL | SOAP) 
 - 🌐 &nbsp; HTML | CSS | JavaScript | Bootstrap | React | VueJs
-- 🛢 &nbsp; MySQL | MariaDB | PostgreSQL | AS400 | Xampp | Docker | Xampp
+- 🛢 &nbsp; MySQL | MariaDB | PostgreSQL | AS400 | Xampp | Docker
 - 🔧 &nbsp; Phpstorm | Visual Studio code | Git (Github | GitLab | Bitbucket) | kubernetes
 - 🖥 &nbsp; Microsoft Office | Illustrator | Photoshop 
 
