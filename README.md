@@ -14,6 +14,7 @@
 
 <h3>🛠 Tech Stack</h3>
 
+- ✍️ &nbsp; Project Manager & SCRUM MASTER
 - 💻 &nbsp; PHP | Symfony | Twig | API-Platform | API (REST | GraphQL | SOAP) 
 - 🌐 &nbsp; HTML | CSS | JavaScript | Bootstrap | React | VueJs
 - 🛢 &nbsp; MySQL | MariaDB | PostgreSQL | AS400 | Xampp | Docker
