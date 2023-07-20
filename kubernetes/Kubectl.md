@@ -1,5 +1,34 @@
 # GUIDE TO USE kubernetes - Kubectl 
 
+```bash
+> kcg :  kubectl config get-contexts  # verifier le context / cluster .. env de deploiement
+> kc  :  k config get-contexts        # affecter le bon cluster > env
+#> tmatlasregistry.azurecr.io :  achercher l\'equivalent dans le fichier jenkinsfile // ou le repo infra
+```
+
+helm -n namespace list
+
+### RECUPERER LA LISTE DES ENV DE DEPLOIEMENT 
+
+```bash
+#Il faut se rendre dans le repo d'un projet exemple : cd ./atlas/atlas-indicateur-dev-env/atlas-indicateur-frontend
+kubectl --namespace=atlas-net-int get deployment
+
+# recupere la liste des deploiement : ce qui existe entre **
+#kubectl --namespace=atlas-net-int get deployment **indicateur-frontend-node**  -o jsonpath='{.spec.template.spec.container
+
+kubectl --namespace=atlas-net-int get deployment indicateur-frontend-node  -o jsonpath='{.spec.template.spec.container
+```
+
+### RECUPERER LA LISTE DES NAMESPACES
+
+```bash
+#Il faut se rendre dans le repo d'un projet exemple : cd ./atlas/atlas-indicateur-dev-env/atlas-indicateur-frontend
+helm --namespace=atlas-net-int list | grep indicateur
+```
+
+### TROUVER UN POD
+
 - Afficher les cluters de travail 
 
 ```
