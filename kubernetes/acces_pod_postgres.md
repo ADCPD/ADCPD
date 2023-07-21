@@ -17,6 +17,8 @@ https://github.com/Suezenv/villagile-infra/blob/master/helm/vdm/msd-AND-waste-ma
 
 ```bash
 kubectl -n default get po | grep post
+
+k -n default exec -it postgres-client  bash
 ```
 
 #### connection à `vdm_msd `: 
