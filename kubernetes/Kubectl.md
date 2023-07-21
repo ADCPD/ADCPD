@@ -31,95 +31,109 @@ helm --namespace=atlas-net-int list | grep indicateur
 
 - Afficher les cluters de travail 
 
-```
+```bash
 kubectl config get-contexts
 ```
 
 - Changer le cluster de travail 
 
-```
+```bash
 kubectl config use villagile-int
 ```
 
 -  La liste des namespaces :
 
-```
+```bash
 kubectl get namespaces
 ```
 
 ou bien
 
-```
+```bash
 kubectl get ns
 ```
 
 -  Remplacer le namespace :
 
-```
+```bash
 kubectl config set-context --current --namespace=zeus-int
 ```
 
 -  Remplacer le namespace :
 
-```
+```bash
 kubectl config set-context --current --namespace=zeus-int
 ```
 
 -  Verifier si le nouveau namespace est pris en compte :
 
-```
+```bash
   kubectl config view --minify | grep namespace:
 ```
 
 - Pour avoir la liste des pods du namespace `zeus-int`
 
-```
+```bash
   kubectl -n zeus-int get po
 ```
 
 - pour avoir la liste des pods du namespace `user-request-int`
 
-```
+```bash
   kubectl -n user-request-int get po 
 ```
 
 - Accèder à un `POD` :
     `vdm-msd-api-symfony-bc4f8d4fb-66l7h` peut changer
 
-```
+```bash
     k -n zeus-int exec -it  vdm-msd-api-symfony-bc4f8d4fb-66l7h -- bash
 ```
 
 - Visualiser les logs d'un `POD`
 
-```
+```bash
     kubectl logs vdm-msd-api-symfony-bc4f8d4fb-66l7h
 ```
 
 - pour avoir la liste des services associée au namespace `zeus-int`
 
-```
+```bash
   kubectl -n zeus-int get svc 
 ```
 
 - pour avoir la liste des ingress(DNS)
 
-```
+```bash
   kubectl -n zeus-int get ingress  
 ```
 
 - pour avoir la liste des images
 
-```
+```bash
   kubectl -n zeus-int get deployment   
 ```
 
+- pour avoir la liste des services
 
+```bash
+  kubectl -n zeus-int get service
+ou
+  kubectl get service
+```
+
+# CONFIG POSTGRESQL CONTAINER (MSD-VDM)
+
+```bash
+kubectl -n default get po
+k -n zeus-int exec -it  postgres-client -- bash
+```
 
 # FICHIER CONFIG INFRA (MSD-VDM)
 
 - chercher le fichier conf dans infra 
-```
+
+```bash
 k get deploy -n zeus-int
 
 // retourner la lister des pods deployer 
