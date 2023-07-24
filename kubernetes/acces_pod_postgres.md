@@ -34,3 +34,19 @@ psql -U vdm_msd@3slabdevpostgres -W -h 3slabdevpostgres.postgres.database.azure.
 psql -U waste_man@3slabdevpostgres -W -h 3slabdevpostgres.postgres.database.azure.com waste_man
 > password : b3N0Z3zc2J!enVyZS5R
 ```
+
+## REMOVE KILLED POD ``postgres-client``
+
+```bash 
+ k -n default delete pod postgres-client
+# pod "postgres-client" deleted
+```
+
+## RELANCE KILLED POD ``postgres-client``
+
+```bash 
+kubectl -n default run --rm -it postgres-client --image=postgres /bin/bash
+```
+
+
+
