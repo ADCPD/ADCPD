@@ -49,4 +49,23 @@ kubectl -n default run --rm -it postgres-client --image=postgres /bin/bash
 ```
 
 
+## Tester la creation d'un job : 
+
+**msd-AND-waste-management git:(master) ✗**
+```bash
+k create job --from=cronjob/vdm-msd-loader-simpliciti-lift-cronjob vdm-msd-loader-simpliciti-manual
+```
+
+**Trouver le CRON creer :**
+
+```bash
+ k get po | grep simpliciti-lift
+```
+
+**Lire les logs du pods :**
+
+```bash
+k logs vdm-msd-loader-simpliciti-manual--1-czfb9
+```
+
 
