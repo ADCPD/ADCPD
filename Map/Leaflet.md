@@ -3,7 +3,7 @@
 Librairie :
 
 ```
-https://unpkg.com/browse/leaflet@1.9.4
+https://unpkg.com/browse/leaflet@1.9.4/
 ```
 
 #### Integration
