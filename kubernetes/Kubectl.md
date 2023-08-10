@@ -3,10 +3,46 @@
 ```bash
 > kcg :  kubectl config get-contexts  # verifier le context / cluster .. env de deploiement
 > kc  :  k config get-contexts        # affecter le bon cluster > env
-#> tmatlasregistry.azurecr.io :  achercher l\'equivalent dans le fichier jenkinsfile // ou le repo infra
+
+#> tmatlasregistry.azurecr.io :  achercher l\'equivalent dans le fichier jenkinsfile // ou le repo infra77
+
+kubectl get services                          # List all services in the namespace
+kubectl get pods --all-namespaces             # List all pods in all namespaces
+kubectl get pods -o wide                      # List all pods in the current namespace, with more details
+kubectl get deployment my-dep                 # List a particular deployment
+kubectl get pods                              # List all pods in the namespace
+kubectl get pod my-pod -o yaml                # Get a pod's YAML
+
+# Describe commands with verbose output
+kubectl describe nodes my-node
+kubectl describe pods my-pod
+
+# List pods Sorted by Restart Count
+kubectl get pods --sort-by='.status.containerStatuses[0].restartCount'
+
+# List PersistentVolumes sorted by capacity
+kubectl get pv --sort-by=.spec.capacity.storage
+
 ```
 
 helm -n namespace list
+
+### TROUVER lA LISTE DE TOUS LES PODS DANS TOUS LES NAMESPACE
+
+```bash
+kubectl get pods --all-namespaces
+
+# trouver un POD dans la liste des namespace
+
+kubectl get pods --all-namespaces | grep client
+```
+
+### RECUPERER LA LISTE POD PAR NAMESPACE
+
+```bash
+#Il faut se rendre dans le repo d'un projet exemple : cd ./atlas/atlas-indicateur-dev-env/atlas-indicateur-frontend
+helm --namespace=atlas-net-int list | grep indicateur
+```
 
 ### RECUPERER LA LISTE DES ENV DE DEPLOIEMENT 
 
@@ -18,13 +54,6 @@ kubectl --namespace=atlas-net-int get deployment
 #kubectl --namespace=atlas-net-int get deployment **indicateur-frontend-node**  -o jsonpath='{.spec.template.spec.container
 
 kubectl --namespace=atlas-net-int get deployment indicateur-frontend-node  -o jsonpath='{.spec.template.spec.container
-```
-
-### RECUPERER LA LISTE DES NAMESPACES
-
-```bash
-#Il faut se rendre dans le repo d'un projet exemple : cd ./atlas/atlas-indicateur-dev-env/atlas-indicateur-frontend
-helm --namespace=atlas-net-int list | grep indicateur
 ```
 
 ### TROUVER UN POD
