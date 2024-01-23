@@ -13,7 +13,8 @@ final class AmirDHAOUADI extends SymfonyDeveloper implements FontEndDeveloper
     use MySQL;
     use Twig;
     use JQuery;
-    use ReactJs;
+    use React Js;
+    use Next JS;
     use Docker;
 
     use Ops;
