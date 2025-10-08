@@ -7,6 +7,7 @@
   <a href="https://www.linkedin.com/in/dhaouadiamir/"><img src="https://img.shields.io/badge/LinkedIn-Amir%20Dhaouadi-blue?style=flat&logo=linkedin"></a>
   <a href="https://twitter.com/adcpd"><img src="https://img.shields.io/badge/Twitter-@adcpd-blue?style=flat&logo=twitter"></a>
   <a href="mailto:dhaouadi.amir@gmail.com"><img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=flat&logo=gmail"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Expérience-12 ans%20depuis%202013-4CAF50?style=flat&logo=clockify&logoColor=white" alt="Expérience depuis 2013"></a>
 </p>
 
 <p align="center">
